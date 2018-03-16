@@ -1,0 +1,25 @@
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-6">
+
+
+      <form id="forms">
+
+        <div class="form-group">
+          <label for="title">Author:</label>
+          <input name="title" #newtitle>
+        </div>
+        <br>
+
+        <div class="field">
+          <label for="link">Quote:</label>
+          <input name="link" #newlink>
+        </div>
+        <br>
+        <button (click)="addQuote(newtitle, newlink)" class="ui positive right floated button">Submit link</button>
+
+
+      </form>
+    </div>
+  </div>
+</div>
