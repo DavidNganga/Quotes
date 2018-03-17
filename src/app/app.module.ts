@@ -4,12 +4,15 @@ import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
 import { FormComponent } from './form/form.component';
+import { QuotessComponent } from './quotess/quotess.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    FormComponent
+    FormComponent,
+    QuotessComponent
+    
   ],
   imports: [
     BrowserModule

@@ -6,6 +6,11 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./form.component.css']
 })
 export class FormComponent implements OnInit {
+  name: string[];
+  addQuote(Quote: HTMLInputElement, Author: HTMLInputElement): boolean {
+console.log(`Adding quote: ${Quote.value} and Author: ${Author.value}`);
+  return false;
+  }
 
   constructor() { }
 
