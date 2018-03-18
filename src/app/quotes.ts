@@ -4,8 +4,8 @@ export class Quotes implements OnInit{
 title: string;
 Author: string;
 constructor() {
-//this.title = 'Angular 2';
-//this.link = 'http://angular.io';
+this.title = false
+this.link = false
 
 }
 voteUp() {
@@ -19,4 +19,4 @@ this.votes -= 1;
 }
 ngOnInit() {
 }
-};
+}
