@@ -1,6 +1,6 @@
 import { Component, HostBinding } from '@angular/core';
 //added
-import {quote} from './quotes'
+import {Quotes} from "./quotes"
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -8,6 +8,14 @@ import {quote} from './quotes'
 
 })
 export class AppComponent {
-  quote="#newlink";
+  quotes:string[];
+    ///new Quote(1,'dont give up'),
+    //new Quote(2,'things get better i guess'),
+  //]
+  //quote="#newlink";
   title = 'Quotes'
+  //quotes: string[];
+  constructor(){
+    this.quotes=["don't give up","buy cookies"]
+  }
 }

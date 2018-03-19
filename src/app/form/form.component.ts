@@ -1,34 +1,22 @@
-import { Component, OnInit } from '@angular/core';
-
+import { Component, OnInit, Output,EventEmitter } from '@angular/core';
+import {Quotes} from '../quotes';
+import {NgModule} from '@angular/core';
 @Component({
   selector: 'app-form',
   templateUrl: './form.component.html',
   styleUrls: ['./form.component.css']
 })
+
 export class FormComponent implements OnInit {
-  name: string[];
-  addQuote(Quote: HTMLInputElement, Author: HTMLInputElement): boolean {
-console.log(`Adding quote: ${Quote.value} and Author: ${Author.value}`);
-  return false;
-  }
+newQuote=new Quotes(0,"","",new Date());
 
-  constructor() { }
+@Output() addQuote=new EventEmitter<Quotes>();
 
-  ngOnInit() {
-    //this.title='Quotes'
-    //this.quotes=['Life is beautiful','Context']
-
+submitQuote(){
+  this.addQuote.emit(this.newQuote);
 }
+constructor() { }
+ngOnInit() {
 
-
-
-onClick(){
-//console.log('love')
-
-//addQuote(quote){
-//console.log(quotes);
-//this.quotes.push('quote');
-return false;
-}
 }
 }
