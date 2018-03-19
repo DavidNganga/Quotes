@@ -15,6 +15,20 @@ console.log(`Adding quote: ${Quote.value} and Author: ${Author.value}`);
   constructor() { }
 
   ngOnInit() {
-  }
+    //this.title='Quotes'
+    //this.quotes=['Life is beautiful','Context']
 
+}
+
+
+
+onClick(){
+//console.log('love')
+
+//addQuote(quote){
+//console.log(quotes);
+//this.quotes.push('quote');
+return false;
+}
+}
 }

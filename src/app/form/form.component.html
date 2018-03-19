@@ -4,7 +4,7 @@
       <div class="col-md-6">
 
 
-        <form id="forms">
+        <form submit="addQuote(quote.value)">
 
           <div class="form-group">
             <label for="title">Author:</label>
@@ -17,8 +17,7 @@
             <input name="Quote" #newlink>
           </div>
           <br>
-          <button (click)="addQuote(newtitle, newlink)" class="ui positive right floated button">Submit Quote</button>
-
+          <button (click)="onClick()" class="ui positive right floated button">Submit Quote</button>
 
         </form>
       </div>

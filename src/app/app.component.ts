@@ -8,6 +8,6 @@ import {quote} from './quotes'
 
 })
 export class AppComponent {
-  quote="don't give up son";
+  quote="#newlink";
   title = 'Quotes'
 }
